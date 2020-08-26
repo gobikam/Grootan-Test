@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<div align='center'><head>
+<script  type="text/javascript">
+  function store(){
+  var name = document.getElementById('name').value;
+  var age = document.getElementById('age').value;
+  var country = document.getElementById('country').value;
+  var date = document.getElementById('dob').value;
+  var male = document.getElementById('male').value;
+  var female = document.getElementById('female').value;
+  var languages = document.getElementById('languages').value;
+  var color = document.getElementById('color').value;
+  var Choose_file = document.getElementById('Choose_file').value;
+  var Email = document.getElementById('Email').value;
+  var time = document.getElementById('time').value;
+  var website = document.getElementById('website').value;
+  var cgpa = document.getElementById('cgpa').value;
+  localStorage.setItem("name", name);
+  localStorage.setItem("age", age);
+  localStorage.setItem("country", country);
+  localStorage.setItem("date", date);
+  localStorage.setItem("male", male);
+  localStorage.setItem("female", female);
+  localStorage.setItem("languages", languages);
+  localStorage.setItem("color", color);
+  localStorage.setItem("Choose_file", Choose_file);
+  localStorage.setItem("Email", Email);
+  localStorage.setItem("time", time);
+  localStorage.setItem("website", website);
+  localStorage.setItem("cgpa", cgpa);
+  alert("Data has been stroed in local storage")
+  window.location.reload();
+}
+</script>
+</head>
+<body>
+<h1><b>Grootan Test</b></h1>
+<h2>Round 2</h2>
+<h4 id='result'></h4>
+<form id="form1" method="POST">
+<table cellspacing='5px' cellpadding='5px' >
+<tr><td><label>Name</label></td>
+<td><input type="text" id="name"></td></tr>
+<tr><td><label>Age</label></td>
+<td><input type="number" id="age"></td></tr>
+<tr><td><label>Country</label></td>
+<td><select id="country">
+<option value="India">India</option>
+<option value="Australia">Australia</option>
+<option value="Kenya">Kenya</option>
+</select></td></tr>
+<tr><td><label>DOB</label></td>
+<td><input type="date" id="dob"></td></tr>
+<tr><td><label>Gender</label></td>
+<td><input type="radio" id="male">Male
+<input type="radio" id="female">Female</td></tr>
+<tr><td><label>Languages Known</label></td>
+<td><select id="languages">
+<option value="Java">Java</option>
+<option value="Ruby">Ruby</option>
+<option value="Python">Python</option>
+</select></td></tr>
+<tr><td><label>Favourite Color</label></td>
+<td><input type="color" id="color"></td></tr>
+<tr><td><label>Upload photograph</label></td>
+<td><input type="file" id="Choose_file" ></td></tr>
+<tr><td><label>Email</label></td>
+<td><input type="email"  id="Email"></td></tr>
+<tr><td><label>Start Time</label></td>
+<td><input type="time" id="time"></td></tr>
+<tr><td><label>Website Address</label></td>
+<td><input type="text" id="website"></td></tr>
+<tr><td><label>CGPA</label></td>
+<td><input type="range"  id="cgpa" min="1" max="10"></td></tr>
+</table>
+<button type="button" value="submit" onclick="store()">Submit</button>
+</form>
+</div>
+</body>
+</html>
