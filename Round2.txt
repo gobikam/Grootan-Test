@@ -41,38 +41,38 @@
 <form id="form1" method="POST">
 <table cellspacing='5px' cellpadding='5px' >
 <tr><td><label>Name</label></td>
-<td><input type="text" id="name"></td></tr>
+<td><input type="text" id="name" required></td></tr>
 <tr><td><label>Age</label></td>
-<td><input type="number" id="age"></td></tr>
+<td><input type="number" id="age" required></td></tr>
 <tr><td><label>Country</label></td>
-<td><select id="country">
+<td><select id="country" required>
 <option value="India">India</option>
 <option value="Australia">Australia</option>
 <option value="Kenya">Kenya</option>
 </select></td></tr>
 <tr><td><label>DOB</label></td>
-<td><input type="date" id="dob"></td></tr>
+<td><input type="date" id="dob" required></td></tr>
 <tr><td><label>Gender</label></td>
-<td><input type="radio" id="male">Male
-<input type="radio" id="female">Female</td></tr>
+<td><input type="radio" id="male" required>Male
+<input type="radio" id="female" required>Female</td></tr>
 <tr><td><label>Languages Known</label></td>
-<td><select id="languages">
+<td><select id="languages" required>
 <option value="Java">Java</option>
 <option value="Ruby">Ruby</option>
 <option value="Python">Python</option>
 </select></td></tr>
 <tr><td><label>Favourite Color</label></td>
-<td><input type="color" id="color"></td></tr>
+<td><input type="color" id="color" required></td></tr>
 <tr><td><label>Upload photograph</label></td>
 <td><input type="file" id="Choose_file" ></td></tr>
 <tr><td><label>Email</label></td>
-<td><input type="email"  id="Email"></td></tr>
+<td><input type="email"  id="Email" required></td></tr>
 <tr><td><label>Start Time</label></td>
-<td><input type="time" id="time"></td></tr>
+<td><input type="time" id="time" required></td></tr>
 <tr><td><label>Website Address</label></td>
-<td><input type="text" id="website"></td></tr>
+<td><input type="text" id="website" required></td></tr>
 <tr><td><label>CGPA</label></td>
-<td><input type="range"  id="cgpa" min="1" max="10"></td></tr>
+<td><input type="range"  id="cgpa" min="1" max="10" required></td></tr>
 </table>
 <button type="button" value="submit" onclick="store()">Submit</button>
 </form>
